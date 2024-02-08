@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },      
+       
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            //"program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Behave current file",
+            "type": "python",
+            "request": "launch",
+            "module": "behave",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "BASE_DIR": "C:/Hycu Project/repo/rcloud_automation"
+            },
+            "args": [
+                "--junit",
+                "--no-capture",
+                "--no-capture-stderr",
+                "${file}"
+            ]
+        },
+        {
+            "name": "Docker: Python - General",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/app"
+                    }
+                ],
+                "projectType": "general"
+            }
+        }
+    ]
+}

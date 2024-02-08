@@ -1,0 +1,9 @@
+Feature: Trello API Interaction
+
+  Scenario: Create a New Trello Board
+    Given a Trello API key API_KEY ... passed in 0.000s
+    And a Trello API token TRELLO_TOKEN ... passed in 0.000s
+    When I create a new Trello board with name Testing_assigment_1 and description This_is_a_test_board ... passed in 0.595s
+    Then the API returns the new board details ... passed in 0.000s
+    And I print or save the new board details to assigment_1_info.txt ... passed in 0.000s
+

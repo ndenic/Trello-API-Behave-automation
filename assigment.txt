@@ -1,0 +1,36 @@
+# Assignment 1: Getting familiar with API calls
+## Description
+
+For this assignment you'll use SaaS Trello that was our first module that we made.   
+For the first assigment you need to get the boards of an organization (Workspace) create/fill a dataclass from the data gotten from the API and just print out the data or save it into a .txt file.
+
+### Simple Trello resource structure:
+- Organization (Workspace) can have many Boards.
+- Boards have one or more Lists and Labels.
+- Lists have Cards
+- Cards have Comments, Checklists and Attachments
+
+## You can also populate created board resources with children resources using Trello API and get that data as well.
+
+## Create a Gherkin feature file with scenario and steps that will call the methods you created to perform previously described actions.
+
+## Resources
+
+Trello introduction: https://www.youtube.com/watch?v=xky48zyL9iA
+
+Trello API documentation: https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-group-actions
+
+Trello auth:
+Create free account and generate Api Key and Api Token that are needed for authorization. Create organization (workspace) using free plan.
+
+## Tips
+Most parent resources have a way to get their nested (child) resources.
+Think of extendability and stability
+
+## Required plugins for VS Code: Cucumber (Gherkin) Full Support, Python Extension Pack.
+Also needed are packages for: Python 3.11, behave>=1.2.6, google-api-python-client
+
+## kreirati dict iz trello 
+## paginacija
+
+## 15 chars
